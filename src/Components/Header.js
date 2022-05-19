@@ -13,22 +13,26 @@ function Header({}) {
     >
       <Box sx={{ border: 0, borderColor: "blue", flex: 2 }}>
         <Typography variant="h4">{personalInfo.name}</Typography>
-        <Typography>Email: {personalInfo.email}</Typography>
-        <Typography>Mobile: {personalInfo.mobile}</Typography>
+        <Typography sx={{ fontSize: 14 }}>
+          Email: {personalInfo.email}
+        </Typography>
+        <Typography sx={{ fontSize: 14 }}>
+          Mobile: {personalInfo.mobile}
+        </Typography>
       </Box>
       <Box sx={{ border: 0, borderColor: "blue", flex: 2, textAlign: "right" }}>
         <Link href={personalInfo.linkedIn} color="inherit" underline="hover">
-          <Typography>Linked In</Typography>
+          <Typography sx={{ fontSize: 14 }}>Linked In</Typography>
         </Link>
         <Link href={personalInfo.github} color="inherit" underline="hover">
-          <Typography>Github</Typography>
+          <Typography sx={{ fontSize: 14 }}>Github</Typography>
         </Link>
         <Link
           href={personalInfo.stackOverflow}
           color="inherit"
           underline="hover"
         >
-          <Typography>Stack Overflow</Typography>
+          <Typography sx={{ fontSize: 14 }}>Stack Overflow</Typography>
         </Link>
       </Box>
     </Box>

@@ -72,3 +72,19 @@ export const experiences = [
     projects: [],
   },
 ];
+
+export const education = [
+  {
+    university: "National Technical University of Athens",
+    degree:
+      "BSc & Integrated Master’s Degree in Electrical And Computer Engineering",
+    location: "Athens, Greece",
+    timePeriod: "2012 - 2019",
+  },
+  {
+    university: "National Technical University of Athens",
+    degree: "Master’s Degree in Data Science and Machine Learning ",
+    location: "Athens, Greece",
+    timePeriod: "2019 - 2021",
+  },
+];
