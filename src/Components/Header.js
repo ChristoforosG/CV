@@ -19,6 +19,9 @@ function Header({}) {
         <Typography sx={{ fontSize: 14 }}>
           Mobile: {personalInfo.mobile}
         </Typography>
+        <Typography sx={{ fontSize: 14 }}>
+          Date of Birth: {personalInfo.dateOfBirth}
+        </Typography>
       </Box>
       <Box sx={{ border: 0, borderColor: "blue", flex: 2, textAlign: "right" }}>
         <Link href={personalInfo.linkedIn} color="inherit" underline="hover">

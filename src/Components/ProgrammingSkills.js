@@ -1,11 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-import { programmingSkills } from "../Conf/Info";
-function ProgrammingSkills() {
-  console.log(programmingSkills);
+
+function ListOfSkills({ skillsList }) {
   return (
-    <Box sx={{ border: 0 }}>
-      {programmingSkills.map(function (skill, i) {
+    <Box sx={{ border: 0, marginX: 1.5 }}>
+      {skillsList.map(function (skill, i) {
         return (
           <Box
             key={i}
@@ -14,7 +13,7 @@ function ProgrammingSkills() {
             <Box sx={{ border: 0, flex: 1 }}>
               <Typography sx={{ fontSize: 12 }}>{skill.header}:</Typography>
             </Box>
-            <Box sx={{ border: 0, flex: 4 }}>
+            <Box sx={{ border: 0, flex: 6 }}>
               <Typography sx={{ fontSize: 12, fontStyle: "italic" }}>
                 {skill.data}
               </Typography>
@@ -26,4 +25,4 @@ function ProgrammingSkills() {
   );
 }
 
-export default ProgrammingSkills;
+export default ListOfSkills;

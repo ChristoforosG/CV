@@ -16,12 +16,7 @@ function ProjectDetails({ detail }) {
       <RemoveIcon
         sx={{ width: 7, height: 7, marginRight: 0.4, marginTop: 0.6 }}
       />
-      <Box
-        sx={{ flexDirection: "row", display: "flex", alignItems: "baseline" }}
-        component="span"
-      >
-        {detail}
-      </Box>
+      {detail}
     </Box>
   );
 }
