@@ -6,11 +6,12 @@ import Section from "./Components/Section";
 import Header from "./Components/Header";
 import Experiences from "./Components/Experiences";
 import Education from "./Components/Education";
+import ProgrammingSkills from "./Components/ProgrammingSkills";
 
 const theme = createTheme({
   typography: {
     allVariants: {
-      fontFamily: ["serif"].join(","),
+      fontFamily: [""],
     },
   },
 });
@@ -25,6 +26,7 @@ function App() {
         <Section title="EDUCATION" />
         <Education />
         <Section title="SKILLS" />
+        <ProgrammingSkills />
         <Section title="ACTIVITIES" />
       </Box>
     </ThemeProvider>
