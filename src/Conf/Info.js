@@ -2,13 +2,19 @@ import { Typography } from "@mui/material";
 import { detail } from "./Styles";
 
 export const personalInfo = {
-  name: "Gavalas Christoforos",
-  email: "christoforos.gavalas@gmail.com",
-  mobile: "+30 6976718912",
-  dateOfBirth: "09/06/1994",
-  github: "https://github.com/ChristoforosG",
-  linkedIn: "https://www.linkedin.com/in/christoforos-gavalas-b0b984186/",
-  stackOverflow: "https://stackoverflow.com/users/12619221/chrisgav",
+  name: "XXXXX XXXXXXXX",
+  email: "XXXXXXXXX@gmail.com",
+  mobile: "+30 69XXXXXXXX",
+  dateOfBirth: "XX/XX/XXXX",
+  github: { link: "https://github.com/ChristoforosG", name: "XXXXXXX" },
+  linkedIn: {
+    link: "https://www.linkedin.com/in/christoforos-gavalas-b0b984186/",
+    name: "XXXXXXX",
+  },
+  stackOverflow: {
+    link: "https://stackoverflow.com/users/12619221/chrisgav",
+    name: "XXXXXXX",
+  },
 };
 
 export const experiences = [
@@ -77,10 +83,9 @@ export const experiences = [
           </Typography>,
           <Typography sx={detail}>
             Deployment of applications in a{" "}
-            <strong>Cloudera Big Data Platform</strong>
-            containing a <strong>Kafka Cluster</strong>, a{" "}
-            <strong>Hadoop Cluster</strong> and{" "}
-            <strong>Kerberos Authentication Cluster</strong>.
+            <strong>Cloudera Big Data Platform</strong> containing a{" "}
+            <strong>Kafka Cluster</strong>, a <strong>Hadoop Cluster</strong>{" "}
+            and <strong>Kerberos Authentication Cluster</strong>.
           </Typography>,
           <Typography sx={detail}>
             Design, Developement, Testing, Deployment and Operation/Maintainance
@@ -145,8 +150,7 @@ export const experiences = [
 export const education = [
   {
     university: "National Technical University of Athens",
-    degree:
-      "BSc & Integrated Master’s Degree in Electrical And Computer Engineering",
+    degree: "Master’s Degree in Data Science and Machine Learning ",
     location: "Athens, Greece",
     GPA: "9/10",
     timePeriod: "2012 - 2019",
@@ -164,7 +168,8 @@ export const education = [
   },
   {
     university: "National Technical University of Athens",
-    degree: "Master’s Degree in Data Science and Machine Learning ",
+    degree:
+      "BSc & Integrated Master’s Degree in Electrical And Computer Engineering",
     location: "Athens, Greece",
     GPA: "8/10",
     timePeriod: "2019 - 2021",

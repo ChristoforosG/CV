@@ -1,4 +1,6 @@
 import { Box, Link, Typography } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { personalInfo } from "../Conf/Info";
 
 function Header({}) {
@@ -23,20 +25,81 @@ function Header({}) {
           Date of Birth: {personalInfo.dateOfBirth}
         </Typography>
       </Box>
-      <Box sx={{ border: 0, borderColor: "blue", flex: 2, textAlign: "right" }}>
-        <Link href={personalInfo.linkedIn} color="inherit" underline="hover">
-          <Typography sx={{ fontSize: 14 }}>Linked In</Typography>
-        </Link>
-        <Link href={personalInfo.github} color="inherit" underline="hover">
-          <Typography sx={{ fontSize: 14 }}>Github</Typography>
-        </Link>
-        <Link
-          href={personalInfo.stackOverflow}
-          color="inherit"
-          underline="hover"
+      <Box
+        sx={{
+          border: 0,
+          borderColor: "blue",
+          flex: 2,
+        }}
+      >
+        <Box
+          sx={{
+            border: 0,
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "right",
+            alignItems: "center",
+          }}
         >
-          <Typography sx={{ fontSize: 14 }}>Stack Overflow</Typography>
-        </Link>
+          <Link
+            href={personalInfo.linkedIn.link}
+            color="inherit"
+            underline="hover"
+            target="_blank"
+            sx={{ marginRight: 1 }}
+          >
+            <Typography sx={{ fontSize: 14 }}>
+              {personalInfo.linkedIn.name}
+            </Typography>
+          </Link>
+          <LinkedInIcon />
+        </Box>
+        <Box
+          sx={{
+            border: 0,
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "right",
+            alignItems: "center",
+            marginTop: 0.5,
+          }}
+        >
+          <Link
+            href={personalInfo.github.link}
+            color="inherit"
+            underline="hover"
+            target="_blank"
+            sx={{ marginRight: 1 }}
+          >
+            <Typography sx={{ fontSize: 14 }}>
+              {personalInfo.github.name}
+            </Typography>
+          </Link>
+          <GitHubIcon />
+        </Box>
+        <Box
+          sx={{
+            border: 0,
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "right",
+            alignItems: "center",
+            marginTop: 0.5,
+          }}
+        >
+          <Link
+            href={personalInfo.stackOverflow.link}
+            color="inherit"
+            underline="hover"
+            target="_blank"
+            sx={{ marginRight: 1 }}
+          >
+            <Typography sx={{ fontSize: 14 }}>
+              {personalInfo.stackOverflow.name}
+            </Typography>
+          </Link>
+          <img src="https://img.icons8.com/metro/26/000000/stackoverflow.png" />
+        </Box>
       </Box>
     </Box>
   );
