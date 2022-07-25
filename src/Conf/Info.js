@@ -2,18 +2,18 @@ import { Typography, Link } from "@mui/material";
 import { detail } from "./Styles";
 
 export const personalInfo = {
-  name: "Gavalas Christoforos",
-  email: "christoforos.gavalas@gmail.com",
-  mobile: "+30 6976718912",
-  dateOfBirth: "09/06/1994",
-  github: { link: "https://github.com/ChristoforosG", name: "ChristoforosG" },
+  name: "XXXXXX XXXXXX",
+  email: "XXXXX.XXXXX@XXXXX.com",
+  mobile: "+30 XXXXXXXX",
+  dateOfBirth: "XX/XX/XXXX",
+  github: { link: "https://github.com/XXXXX", name: "XXXXX" },
   linkedIn: {
-    link: "https://www.linkedin.com/in/christoforos-gavalas-b0b984186/",
-    name: "christoforos-gavalas",
+    link: "https://www.linkedin.com/in/XXXXXX/",
+    name: "XXXXXXX-XXXXX",
   },
   stackOverflow: {
-    link: "https://stackoverflow.com/users/12619221/chrisgav",
-    name: "chrisgav",
+    link: "https://stackoverflow.com/users/XXXXXX/XXXXXXXXX",
+    name: "XXXXXXXX",
   },
 };
 
