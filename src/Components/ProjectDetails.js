@@ -11,6 +11,7 @@ function ProjectDetails({ detail }) {
         flexDirection: "row",
         display: "flex",
         marginX: 1.5,
+        marginTop: 0.2,
       }}
     >
       <RemoveIcon

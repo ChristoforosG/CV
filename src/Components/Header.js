@@ -22,7 +22,7 @@ function Header({}) {
           Mobile: {personalInfo.mobile}
         </Typography>
         <Typography sx={{ fontSize: 14 }}>
-          Date of Birth: {personalInfo.dateOfBirth}
+          Address: {personalInfo.address}
         </Typography>
       </Box>
       <Box

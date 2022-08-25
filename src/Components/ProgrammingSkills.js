@@ -3,12 +3,17 @@ import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 
 function ListOfSkills({ skillsList }) {
   return (
-    <Box sx={{ border: 0, marginX: 1.5 }}>
+    <Box sx={{ border: 0, marginX: 2 }}>
       {skillsList.map(function (skill, i) {
         return (
           <Box
             key={i}
-            sx={{ border: 0, flexDirection: "row", display: "flex" }}
+            sx={{
+              border: 0,
+              flexDirection: "row",
+              display: "flex",
+              marginTop: 0.3,
+            }}
           >
             <Box sx={{ border: 0, flex: 1 }}>
               <Typography sx={{ fontSize: 12 }}>{skill.header}:</Typography>

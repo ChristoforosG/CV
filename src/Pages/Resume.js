@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Section from "../Components/Section";
 import Header from "../Components/Header";
@@ -24,6 +24,9 @@ function Resume() {
         <Experiences />
         <Section title="EDUCATION" />
         <Education />
+        <Box sx={{ marginTop: 0 }}>
+          <Typography></Typography>
+        </Box>
         <Section title="SKILLS" />
         <Skills />
         <Section title="PROJECTS - ACTIVITIES" />
