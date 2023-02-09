@@ -1,9 +1,8 @@
 import { Box, Link, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { personalInfo } from "../Conf/Info";
 
-function Header({}) {
+function Header({ personalInfo }) {
   return (
     <Box
       sx={{

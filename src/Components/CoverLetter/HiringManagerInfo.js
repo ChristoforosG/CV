@@ -19,7 +19,7 @@ function HiringManagerInfo() {
   const today = new Date();
   return (
     <Box sx={{ border: 0 }}>
-      <Typography sx={{ border: 0, borderColor: "red", marginBottom: 3 }}>
+      <Typography sx={{ border: 0, borderColor: "red", marginBottom: 2 }}>
         {today.getDate()} {monthNames[today.getMonth()]}, {today.getFullYear()}
       </Typography>
       <Typography sx={{ border: 0, borderColor: "red" }}>

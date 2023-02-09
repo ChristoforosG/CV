@@ -1,7 +1,7 @@
-import { Typography, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import EducationUnit from "./EducationUnit";
-import { education } from "../Conf/Info";
-function Education() {
+
+function Education({ education }) {
   return (
     <Box>
       {education.map(function (study, i) {

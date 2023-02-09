@@ -7,6 +7,17 @@ import Experiences from "../Components/Experiences";
 import Education from "../Components/Education";
 import Skills from "../Components/Skills";
 import Activities from "../Components/Activities";
+import {
+  sectionTitles,
+  personalInfo,
+  experiences,
+  education,
+  programmingTitle,
+  programmingSkills,
+  communicationTitle,
+  communicationSkills,
+  activities,
+} from "../Conf/Info";
 
 function Resume() {
   const theme = createTheme({
@@ -19,18 +30,23 @@ function Resume() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ border: 0, borderColor: "black", marginTop: 2, marginX: 4 }}>
-        <Header />
-        <Section title="EXPERIENCE" />
-        <Experiences />
-        <Section title="EDUCATION" />
-        <Education />
+        <Header personalInfo={personalInfo} />
+        <Section title={sectionTitles[0]} />
+        <Experiences experiences={experiences} />
+        <Section title={sectionTitles[1]} />
+        <Education education={education} />
         <Box sx={{ marginTop: 0 }}>
           <Typography></Typography>
         </Box>
-        <Section title="SKILLS" />
-        <Skills />
-        <Section title="PROJECTS - ACTIVITIES" />
-        <Activities />
+        <Section title={sectionTitles[2]} />
+        <Skills
+          programmingTitle={programmingTitle}
+          communicationTitle={communicationTitle}
+          programmingSkills={programmingSkills}
+          communicationSkills={communicationSkills}
+        />
+        <Section title={sectionTitles[3]} />
+        <Activities activities={activities} />
       </Box>
     </ThemeProvider>
   );

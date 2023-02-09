@@ -4,7 +4,7 @@ import { coverBodyInfo } from "../../Conf/Info";
 function CoverBody() {
   const margin = 2;
   return (
-    <Box sx={{ border: 0, marginTop: 5 }}>
+    <Box sx={{ border: 0, marginTop: 2 }}>
       <Box sx={{ marginTop: margin }}>
         <Typography>{coverBodyInfo.intro}</Typography>
       </Box>

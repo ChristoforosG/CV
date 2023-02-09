@@ -1,9 +1,8 @@
 import { Box, Link, Typography } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
 import ExperienceUnit from "./ExperienceUnit";
-import { experiences } from "../Conf/Info";
 
-function Experiences() {
+function Experiences({ experiences }) {
   return (
     <Box>
       {experiences.map(function (experience, i) {
