@@ -16,5 +16,6 @@ export const useStyles = makeStyles({
 export const detail = {
   fontSize: 12,
   align: "justify",
+  textAlign: "justify",
   border: 0,
 };

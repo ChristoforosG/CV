@@ -38,6 +38,7 @@ function Resume() {
         <Box sx={{ marginTop: 0 }}>
           <Typography></Typography>
         </Box>
+        <Box marginBottom={5}></Box>
         <Section title={sectionTitles[2]} />
         <Skills
           programmingTitle={programmingTitle}

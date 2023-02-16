@@ -14,6 +14,7 @@ function Header({ personalInfo }) {
     >
       <Box sx={{ border: 0, borderColor: "blue", flex: 2 }}>
         <Typography variant="h4">{personalInfo.name}</Typography>
+        <Box marginBottom={1}></Box>
         <Typography sx={{ fontSize: 14 }}>
           Email: {personalInfo.email}
         </Typography>
