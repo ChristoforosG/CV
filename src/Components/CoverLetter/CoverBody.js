@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import { coverBodyInfo } from "../../Conf/Info";
 
-function CoverBody() {
+function CoverBody({ coverBodyInfo }) {
   const margin = 2;
   return (
     <Box sx={{ border: 0, marginTop: 2 }}>

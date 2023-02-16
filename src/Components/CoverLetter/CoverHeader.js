@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import { personalInfo } from "../../Conf/Info";
 
-function CoverHeader() {
+function CoverHeader({ personalInfo }) {
   return (
     <Box
       sx={{

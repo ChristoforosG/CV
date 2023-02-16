@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import { coverSignatureInfo } from "../../Conf/Info";
 
-function Signature() {
+function Signature({ coverSignatureInfo }) {
   const margin = 2;
   return (
     <Box sx={{ border: 0, marginTop: 2 }}>

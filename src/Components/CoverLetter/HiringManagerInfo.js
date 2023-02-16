@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import { hiringManagerInfo } from "../../Conf/Info";
 
-function HiringManagerInfo() {
+function HiringManagerInfo({ hiringManagerInfo }) {
   const monthNames = [
     "Jan",
     "Feb",

@@ -6,6 +6,12 @@ import Section from "../Components/Section";
 import HiringManagerInfo from "../Components/CoverLetter/HiringManagerInfo";
 import CoverBody from "../Components/CoverLetter/CoverBody";
 import Signature from "../Components/CoverLetter/Signature";
+import {
+  personalInfo,
+  hiringManagerInfo,
+  coverBodyInfo,
+  coverSignatureInfo,
+} from "../Conf/InfoSecret";
 
 function CoverLetter() {
   const theme = createTheme({
@@ -18,11 +24,11 @@ function CoverLetter() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ border: 0, borderColor: "black", marginTop: 2, marginX: 4 }}>
-        <CoverHeader />
+        <CoverHeader personalInfo={personalInfo} />
         <Section title="" />
-        <HiringManagerInfo />
-        <CoverBody />
-        <Signature />
+        <HiringManagerInfo hiringManagerInfo={hiringManagerInfo} />
+        <CoverBody coverBodyInfo={coverBodyInfo} />
+        <Signature coverSignatureInfo={coverSignatureInfo} />
       </Box>
     </ThemeProvider>
   );

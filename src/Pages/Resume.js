@@ -17,7 +17,7 @@ import {
   communicationTitle,
   communicationSkills,
   activities,
-} from "../Conf/Info";
+} from "../Conf/InfoSecret";
 
 function Resume() {
   const theme = createTheme({
